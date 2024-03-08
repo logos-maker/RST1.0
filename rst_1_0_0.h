@@ -86,7 +86,7 @@ enum opcodes_to_daw{
 	DAW_SET_MIDI=8,		// MIDI data for host to recive from plug.
 	DAW_SUPPORTS=37,	// e.g. "Silence Support" or "note_id Support"
 };
-struct winrect{ 	// RECT structure same as in (windef.h)
+struct win_rect{ 	// RECT structure same as in (windef.h)
 	int16_t top;	// Set to zero - Specifies the y-coordinate of the upper-left corner of the rectangle.
 	int16_t left;	// Set to zero - Specifies the x-coordinate of the upper-left corner of the rectangle.
 	int16_t bottom;	// Set to window width - Specifies the x-coordinate of the lower-right corner of the rectangle.
