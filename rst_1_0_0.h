@@ -1,5 +1,5 @@
 // Audio plugin header file with voice killing for synthesizers and support for processing silence for audio effect units.
-// Use the entry point name main() for 100% compabillity
+// Use the entry point name main() for 100% compatibility
 #ifdef __x86_64
 	typedef int64_t plug;
 	typedef int32_t plug_v;
