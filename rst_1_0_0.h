@@ -114,7 +114,7 @@ typedef struct daw_transport{ // BPM is same as number as quarter notes per minu
 	double  play_samplerate;		// The current sample rate.
 	double  system_clock_ns;		// System clock in nano seconds.
 	double  play_qp;			// The 'quarter note position' playing/last played.
-	double  play_bpm;			// The current BPM (beats per minute) Is a beat is a quarter note in lengt.
+	double  play_bpm;			// The current BPM (beats per minute) Is a beat is a quarter note in length.
 	double  play_qp_start;			// The 'quarter note position' start position (into the song) last played.
 	double  loop_qp_start;			// The 'quarter note position' left loop point.
 	double  loop_qp_end;			// The 'quarter note position' right loop point.
