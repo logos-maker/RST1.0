@@ -33,7 +33,7 @@ struct plug_header{ // The ABI for audio effect plugins
 	int32_t plug_version; 		// Version of this plug (will force updates about plug in host).
 	void (*plug_float_audio) (plug_header* effect,  float** inputs,  float** outputs, int32_t samples); // Used by host to make plug process 32bit audio buffers (float).
 	void (*plug_double_audio)(plug_header* effect, double** inputs, double** outputs, int32_t samples); // Used by host to make plug process 64bit audio buffers(double).
-	int32_t magic_number_2;		// 'RST '
+	char magic_number_2[4];		// .magic_number_2[4] = "RST"; 
 	// Support version data
 	int32_t supported_version_lowest;  // Lowest supported RST ABI version. Set to 1000
 	int32_t supported_version_highest; // Highest supported RST ABI version. Set to 1000
