@@ -52,6 +52,7 @@ enum plug_flags{
 	HAS_CHANNEL_STRIP = 256, 	// Plug is a synthesizer. And 2 first channels will not be used for effect-send, and will have a channel strip for the 2 first channels.
 	HAS_ONLY_SOUND_OUT_ON_SOUND_IN = 512, // To save processing power in host if possible.
 	HAS_SILENCE_SUPPORT = 8192,
+	HAS_NOTE_ID_SUPPORT = 16384
 };
 enum opcodes{
 	PLUG_EDITOR_OPEN=14,		// Attention: Is called when the DAW want the plug to open a window.
