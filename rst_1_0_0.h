@@ -71,7 +71,7 @@ enum opcodes{
 	PLUG_SUPPORTS=51,		// For the host to ask if the plug supports a sertain functionallity, the name of the functionallity is supplied in a text string by the host.
 	PLUG_GET_ABI_MAGIC_NUMBER=58,	// Asks the plug what version of the ABI that is was designed for, allways return 2400.
 	PLUG_GET_PATCH_TEXT_BY_INDEX=29,// Gets the preset name by index.
-	PLUG_GET_PATCH_TEXT=5,		// Alternative to plug_get_indexed_program_text.
+	PLUG_GET_PATCH_TEXT=5,		// Alternative to PLUG_GET_PATCH_TEXT_BY_INDEX
 	PLUG_SET_PATCH_NUMBER=2,	// Change plug preset program/patch.
 	PLUG_GET_PATCH_NUMBER=3,	// Ask plug for program/patch number.
 	PLUG_GET_PLUG_TYPE=35,		// Ask if it's a effect unit or a synthesizer.
@@ -83,6 +83,7 @@ enum opcodesdaw{
 	DAW_AUTOMATE_END=44,	// tell host about released knob/var
 	DAW_GET_TIME=7,		// get time info from host
 	DAW_SET_MIDI=8,		// MIDI data for host to recive from plug.
+	DAW_SUPPORTS=37,	// e.g. "Silence Support" or "note_id Support"
 };
 struct winrect{ 	// RECT structure same as in (windef.h)
 	int16_t top;	// Set to zero - Specifies the y-coordinate of the upper-left corner of the rectangle.
