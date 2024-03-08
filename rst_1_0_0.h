@@ -54,7 +54,7 @@ enum plug_flags{
 	HAS_SILENCE_SUPPORT = 8192,
 	HAS_NOTE_ID_SUPPORT = 16384
 };
-enum opcodes{
+enum opcodes_to_plug{
 	PLUG_EDITOR_OPEN=14,		// Attention: Is called when the DAW want the plug to open a window.
 	PLUG_EDITOR_CLOSE=15,		// Attention: After you answered this call, then the window is closed by DAW.
 	PLUG_EDITOR_SIZE=13,		// Width and hight of the editor window.
@@ -78,7 +78,7 @@ enum opcodes{
 	PLUG_GET_PLUG_TYPE=35,		// Ask if it's a effect unit or a synthesizer.
 	PLUG_SET_MIDI=25		// Plug recives MIDI events from host.
 };
-enum opcodesdaw{
+enum opcodes_to_daw{
 	DAW_AUTOMATE=0,		// send knob value to host 
 	DAW_AUTOMATE_START=43,	// tell host index of grabbed knob/var
 	DAW_AUTOMATE_END=44,	// tell host about released knob/var
