@@ -91,7 +91,7 @@ struct winrect{ 	// RECT structure same as in (windef.h)
 	int16_t right;	// Set to window higth - Specifies the y-coordinate of the lower-right corner of the rectangle.
 };
 typedef struct midi_event{ // It's a special type of event
-	int32_t event_type;		// Set to 1 if MIDI event, 6 is it's a sysex message that is not supported by this struct. (set to 7)
+	int32_t event_type;		// Set to 1 if MIDI event, 6 is it's a sysex message that is not supported by this struct.
 	int32_t event_size;		// Size of this event in bytes and that is 32.
 	int32_t sample_offset;		// offset in number of samples in the audio buffer.
 	int32_t realtime_flag;		// Set to 1 if it's not playbacked from a sequencer track. Handle the event immediately if set. if 0 check sample_offset for timing.
