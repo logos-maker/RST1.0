@@ -133,7 +133,7 @@ enum transport_flags{
 	DAW_RECORDING 		= 8,	// Set if DAW is recording
 
 	DAW_AUTOMATION_WRITE	= 64,	// DAW is writing automation to plug
-	DAW_AUTOMATION_READ	= 128,	// DAW is reading autiomation from plug
+	DAW_AUTOMATION_READ	= 128,	// DAW is reading automation from plug
 
 	// play_sample value is always valid and has no bit flag.
 	VALID_SYSTEM_CLOCK_ns		= 256,	
