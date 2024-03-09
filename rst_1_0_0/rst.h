@@ -38,8 +38,8 @@ struct plug_header{ // The ABI for audio effect plugins
 	int32_t supported_version_lowest;  // Lowest supported RST ABI version. Set to 1000
 	int32_t supported_version_highest; // Highest supported RST ABI version. Set to 1000
 	// SS "Silence Support"
-	int32_t (*plug_float_audio_ss) (plug_header* effect,  float** inputs,  float** outputs, int32_t samples, int32_t silence); // First channel is bit 0, second is 1 annd so on for incomming value in silence and returned value. Flags is set for silent channels.
-	int32_t (*plug_double_audio_ss)(plug_header* effect, double** inputs, double** outputs, int32_t samples, int32_t silence); // First channel is bit 0, second is 1 annd so on for incomming value in silence and returned value. Flags is set for silent channels.
+	int32_t (*plug_float_audio_ss) (plug_header* effect,  float** inputs,  float** outputs, int32_t samples, int32_t silence); // First channel is bit 0, second is 1 and so on for incoming value in silence and returned value. Flags is set for silent channels.
+	int32_t (*plug_double_audio_ss)(plug_header* effect, double** inputs, double** outputs, int32_t samples, int32_t silence); // First channel is bit 0, second is 1 and so on for incoming value in silence and returned value. Flags is set for silent channels.
 	char reserved_block[100];	// reserved, set to zero
 };
 typedef plug (*daw_callback) (plug_header* effect, int32_t opcode, int32_t index, plug value, void* ptr, float opt); 
